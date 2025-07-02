@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
         if(!isGameOver)
         {
             time += Time.deltaTime;
-            TimeText.text = "Time: " + time;
+            TimeText.text = "Time: " + ((int)time);
         }
         else
         {
@@ -52,6 +52,6 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetFloat("BestTime", bestTime);
         }
 
-        BestTimeText.text = "Best Time: " + bestTime;
+        BestTimeText.text = "Best Time: " + ((int)bestTime);
     }
 }
